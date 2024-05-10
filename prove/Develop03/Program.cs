@@ -77,7 +77,7 @@ public class Scripture
         Console.WriteLine($"{Reference}:");
         foreach (var word in words)
         {
-            Console.Write(word.IsHidden ? "***** " : $"{word.Text} ");
+            Console.Write(word.IsHidden ? "______" : $"{word.Text} ");
         }
         Console.WriteLine("\nPress Enter to continue or type 'quit' to exit.");
     }

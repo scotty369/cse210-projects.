@@ -2,7 +2,6 @@ using System;
 
 namespace EventPlanning
 {
-    // Address class to encapsulate address details
     public class Address
     {
         public string Street { get; set; }
@@ -24,7 +23,6 @@ namespace EventPlanning
         }
     }
 
-    // Base Event class
     public abstract class Event
     {
         private string title;
@@ -55,7 +53,6 @@ namespace EventPlanning
         }
     }
 
-    // Lecture class derived from Event
     public class Lecture : Event
     {
         private string speaker;
@@ -74,7 +71,6 @@ namespace EventPlanning
         }
     }
 
-    // Reception class derived from Event
     public class Reception : Event
     {
         private string rsvpEmail;
@@ -91,7 +87,6 @@ namespace EventPlanning
         }
     }
 
-    // OutdoorGathering class derived from Event
     public class OutdoorGathering : Event
     {
         private string weatherForecast;
